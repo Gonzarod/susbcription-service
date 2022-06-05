@@ -35,7 +35,7 @@ public class CourseController {
     }
 
     @GetMapping("/courses/{courseId}")
-    @Operation(summary = "Get Plan by Id", description = "Get Course by Id", tags = {"Course"})
+    @Operation(summary = "Get Course by Id", description = "Get Course by Id", tags = {"Course"})
     public Course getCourseById(@PathVariable Long courseId){
         return this.courseService.getCourseById(courseId);
     }
